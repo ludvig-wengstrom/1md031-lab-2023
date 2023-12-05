@@ -3,69 +3,107 @@
    <head >
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
        <title>Pulp Fiction Burgare </title>
-       <meta charset="utf-8"/>
-    
+       <meta charset="utf-8"/>  
    </head>
-   <body>
+
+   <body >
+
     <header>
-       
-        <h1> Välkomna till Pulp Fiction Burgare </h1>
+
+    <div class="storbild" > 
+        <img src="pulp.dance.png" alt="Nice">
+        <div class="bildtext" >Welcome to Pulp Fiction Burger</div>
+    </div>
     </header>
-    <main>
-<section>
+
+
+
+<main>
+
+
+    <section class="burger-class" id="burger-section">
      <h3>Våra burgare </h3>
-        Nedan ser du våra olika burgare.
-    </section>
+        <p>Nedan ser du våra olika burgare.</p>
 
-    <div style="display: inline-block;" >
-    <section>
 
+        <div class=newburgers>
+
+            <div class="B1"> 
+            <h3>Royale with Cheese</h3>   
+            <img src="LeBigMac .jpeg" alt="Royale with Cheese">
+            <br />
+                <ul>
+                    <li> Sexigt namn </li>
+                    <li>Quarter Pounder med cheese </li>
+                    <li> Otroligt sexigt namn (<span id="allegier">Gluten</span>) </li>
+                </ul> 
+            </div>
+
+            <div class="B2" >
+            <h3> Big Kahuna Burger</h3>
+            <img src="RWC.jpeg" alt="Royale with Cheese" >
+            <br />
+                <ul>
+                    <li> Från Hawaii </li>
+                    <li>"This is a tasty burger" </li>
+                    <li> Inget sexigt namn (<span id="allegier">Ful</span>) </li>
+                </ul>
+        </div>
+
+            <div class="B3"> 
+               <h3>Durwood Kirby Burger</h3> 
+            <img src="mia$5.jpeg" alt="Royale with Cheese" style="width: 400px"> 
+            <br />
+                <ul>
+                    <li> Bloody </li>
+                     <li>Serveras snabbt </li>
+                    <li> Passar bra med en $5 milkshake  </li>
+                </ul>
+        </div>
+        </div>
+        
+
+
+        <!--  <div class="burgers" style="display: inline-block;" >
         <h4>Royale with Cheese  </h4>
-        <img src="LeBigMac .jpeg" alt="Royale with Cheese" title="Royale with Cheese" style="width: 300px ;" > 
-        <br />
-        <ul>
-         <li> Sexigt namn </li>
-         <li>En fransk Quarter Pounder med cheese </li>
-         <li> Otroligt sexigt namn </li>
-        </ul>
-
-       </section>
+            <img src="LeBigMac .jpeg" alt="Royale with Cheese" title="Royale with Cheese" style="width: 300px ;" > 
+            <br />
+                <ul>
+                    <li> Sexigt namn </li>
+                    <li>Quarter Pounder med cheese </li>
+                    <li> Otroligt sexigt namn (<span id="allegier">Gluten</span>) </li>
+                </ul>   
     </div>
 
-   <div style="display: inline-block;" >
-    <section>
+    <div class="burgers" style="display: inline-block;" >
             <h4>Big Kahuna Burger  </h4>
             <img src="RWC.jpeg" alt="Royale with Cheese" title="Royale with Cheese" style="width: 300px ;" > 
             <br />
-            <ul>
-             <li> Från Hawaii </li>
-             <li>"This is a tasty burger" </li>
-             <li> Inget sexigt namn </li>
-             
-            </ul>
-        </section>
-        </div>
-
-        <div style="display: inline-block;" >
-        <section>
-    
-                <h4>Durwood  Kirby Burger </h4>
-                <img src="mia$5.jpeg" alt="Royale with Cheese" title="Royale with Cheese" style="width: 280px ;" > 
-                <br />
                 <ul>
-                 <li> Bloody </li>
-                 <li>Serveras snabbt </li>
-                 <li> Passar bra med en $5 milkshake  </li>
+                    <li> Från Hawaii </li>
+                    <li>"This is a tasty burger" </li>
+                    <li> Inget sexigt namn (<span id="allegier">Ful</span>) </li>
                 </ul>
-        </section>
     </div>
 
-<section>
-    <h3> Kundes information</h3>
-    Här skriver du in din information
-</section>
-<section>
-<h4>Leveransinformation </h4>
+    <div class="burgers" style="display: inline-block;" >
+            <h4>Durwood Kirby Burger </h4>
+            <img src="mia$5.jpeg" alt="Royale with Cheese" title="Royale with Cheese" style="width: 280px ;" > 
+            <br />
+                <ul>
+                    <li> Bloody </li>
+                     <li>Serveras snabbt </li>
+                    <li> Passar bra med en $5 milkshake  </li>
+                </ul>
+    </div>-->
+   
+
+    </section>
+
+    <section class="kund-info" id="Kund-information">
+        <h3> Kundes information</h3>
+        <p> Här skriver du in din information</p>
+        <h4>Leveransinformation </h4>
 
     <p>
         <label for="fullname">Full name</label><br>
@@ -82,7 +120,7 @@
     </p>
 
     <p>
-        <label for="number">House</label><br>
+        <label for="number">House (<span id="allegier">Gluten</span>)</label><br>
         <input type="text" id="number" name="hn" type="number" min="0" max="100" placeholder="House Number ">
     </p>
 
@@ -110,20 +148,22 @@
         <input type="radio" id="Hemligt" name="kön" value="Hemligt">
         <label for="Hemligt">Hemligt</label>
       </div>
-    
-      <p>
-      
-        <label for="button">Send Info</label>
-        <div>
+      <p> </p>
+
+    </section>
+
+    <section> 
         <button type="submit">
             <img src="Sent it.jpeg" width="150" > <br>
             Send it
           </button>
-      </div>
-    </p>
+    </section>
 
-</section>
-    </main>
+      
+
+
+    
+</main>
     <hr>
 <footer>
     &copy; ludvig.wengstrom@gmail.com
